@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		09C8A4B20F1907F939898FCC0E5971FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		12D67EA31C208EF6E931FE21DFFC7F99 /* VKiOSViews-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF9B5145FAEAE98C5440F3F26D2A3281 /* VKiOSViews-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A34293F1F5B241E00CE0396 /* UIButton+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34293C1F5B241E00CE0396 /* UIButton+RoundedCorners.swift */; };
-		3A3429401F5B241E00CE0396 /* UIImageView+Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34293D1F5B241E00CE0396 /* UIImageView+Circular.swift */; };
-		3A3429411F5B241E00CE0396 /* UIViews+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34293E1F5B241E00CE0396 /* UIViews+Rounded.swift */; };
+		3A3429461F5B2FDA00CE0396 /* UIButton+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3429431F5B2FDA00CE0396 /* UIButton+RoundedCorners.swift */; };
+		3A3429471F5B2FDA00CE0396 /* UIImageView+Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3429441F5B2FDA00CE0396 /* UIImageView+Circular.swift */; };
+		3A3429481F5B2FDA00CE0396 /* UIViews+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3429451F5B2FDA00CE0396 /* UIViews+Rounded.swift */; };
 		5633C348EBC450F09E23BBCBE6FD5772 /* Pods-VKiOSViews_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE8C1FBACFF257364C22596F469AC586 /* Pods-VKiOSViews_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		639BFB3B96109CEE4EB38B6E4D23C558 /* Pods-VKiOSViews_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA33E8708C83B4A94DFF69D7340761D /* Pods-VKiOSViews_Tests-dummy.m */; };
 		85A38219A7D242E3D497B0EF20630E04 /* VKiOSViews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B050549DA91FE31ABDCD25D0603ABF /* VKiOSViews-dummy.m */; };
@@ -41,9 +41,9 @@
 		34B050549DA91FE31ABDCD25D0603ABF /* VKiOSViews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VKiOSViews-dummy.m"; sourceTree = "<group>"; };
 		3793C6A8D98883A9BC31C52D2221AA93 /* Pods-VKiOSViews_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VKiOSViews_Example.modulemap"; sourceTree = "<group>"; };
 		385E05E43ED8647B23E844875657D7E4 /* VKiOSViews.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VKiOSViews.xcconfig; sourceTree = "<group>"; };
-		3A34293C1F5B241E00CE0396 /* UIButton+RoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+RoundedCorners.swift"; sourceTree = "<group>"; };
-		3A34293D1F5B241E00CE0396 /* UIImageView+Circular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Circular.swift"; sourceTree = "<group>"; };
-		3A34293E1F5B241E00CE0396 /* UIViews+Rounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViews+Rounded.swift"; sourceTree = "<group>"; };
+		3A3429431F5B2FDA00CE0396 /* UIButton+RoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+RoundedCorners.swift"; sourceTree = "<group>"; };
+		3A3429441F5B2FDA00CE0396 /* UIImageView+Circular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Circular.swift"; sourceTree = "<group>"; };
+		3A3429451F5B2FDA00CE0396 /* UIViews+Rounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViews+Rounded.swift"; sourceTree = "<group>"; };
 		4AA79AD580E9D646887463258C24F6DE /* Pods-VKiOSViews_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VKiOSViews_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D57EB9581263893712A8597D3DCFEBB /* Pods_VKiOSViews_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKiOSViews_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4E4E7BE28685E69C76120A407ACC67 /* Pods-VKiOSViews_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VKiOSViews_Example-resources.sh"; sourceTree = "<group>"; };
@@ -113,9 +113,7 @@
 		1CE36893AA8CE42E2D4AB05DCCE89665 /* VKiOSViews */ = {
 			isa = PBXGroup;
 			children = (
-				3A34293C1F5B241E00CE0396 /* UIButton+RoundedCorners.swift */,
-				3A34293D1F5B241E00CE0396 /* UIImageView+Circular.swift */,
-				3A34293E1F5B241E00CE0396 /* UIViews+Rounded.swift */,
+				3A3429421F5B2FDA00CE0396 /* Classes */,
 				1536F5E8390E52472AD025D2767397EB /* Support Files */,
 			);
 			name = VKiOSViews;
@@ -138,6 +136,16 @@
 			);
 			name = "Pods-VKiOSViews_Tests";
 			path = "Target Support Files/Pods-VKiOSViews_Tests";
+			sourceTree = "<group>";
+		};
+		3A3429421F5B2FDA00CE0396 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3A3429431F5B2FDA00CE0396 /* UIButton+RoundedCorners.swift */,
+				3A3429441F5B2FDA00CE0396 /* UIImageView+Circular.swift */,
+				3A3429451F5B2FDA00CE0396 /* UIViews+Rounded.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		691ACABB2B06CC3952F69403C508DEF3 /* Targets Support Files */ = {
@@ -332,10 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3429411F5B241E00CE0396 /* UIViews+Rounded.swift in Sources */,
-				3A34293F1F5B241E00CE0396 /* UIButton+RoundedCorners.swift in Sources */,
+				3A3429481F5B2FDA00CE0396 /* UIViews+Rounded.swift in Sources */,
 				CABF19DC8DBAD3140E21317909EF95D9 /* Pods-VKiOSViews_Example-dummy.m in Sources */,
-				3A3429401F5B241E00CE0396 /* UIImageView+Circular.swift in Sources */,
+				3A3429461F5B2FDA00CE0396 /* UIButton+RoundedCorners.swift in Sources */,
+				3A3429471F5B2FDA00CE0396 /* UIImageView+Circular.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
