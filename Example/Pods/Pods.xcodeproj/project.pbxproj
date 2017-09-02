@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		09C8A4B20F1907F939898FCC0E5971FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		12D67EA31C208EF6E931FE21DFFC7F99 /* VKiOSViews-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF9B5145FAEAE98C5440F3F26D2A3281 /* VKiOSViews-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A34293F1F5B241E00CE0396 /* UIButton+RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34293C1F5B241E00CE0396 /* UIButton+RoundedCorners.swift */; };
+		3A3429401F5B241E00CE0396 /* UIImageView+Circular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34293D1F5B241E00CE0396 /* UIImageView+Circular.swift */; };
+		3A3429411F5B241E00CE0396 /* UIViews+Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A34293E1F5B241E00CE0396 /* UIViews+Rounded.swift */; };
 		5633C348EBC450F09E23BBCBE6FD5772 /* Pods-VKiOSViews_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE8C1FBACFF257364C22596F469AC586 /* Pods-VKiOSViews_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		639BFB3B96109CEE4EB38B6E4D23C558 /* Pods-VKiOSViews_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA33E8708C83B4A94DFF69D7340761D /* Pods-VKiOSViews_Tests-dummy.m */; };
 		85A38219A7D242E3D497B0EF20630E04 /* VKiOSViews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B050549DA91FE31ABDCD25D0603ABF /* VKiOSViews-dummy.m */; };
-		93BADD8313EBC979A0D442FCCB19D8EB /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9099A35FE7935F734A8FB84E20710E /* ReplaceMe.swift */; };
 		CABF19DC8DBAD3140E21317909EF95D9 /* Pods-VKiOSViews_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F969582D02878287E97541466C2CD3FE /* Pods-VKiOSViews_Example-dummy.m */; };
 		CD427B253EC6C145CF6BD71B0B76A09D /* Pods-VKiOSViews_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15E05A3AD42A6AC3DC4AD43D79D60624 /* Pods-VKiOSViews_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E697B442B7338CB7508CB5900DCBBB6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -31,20 +33,23 @@
 
 /* Begin PBXFileReference section */
 		06AF3E6E393ADE56004171C0E92E67F3 /* Pods-VKiOSViews_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VKiOSViews_Example-frameworks.sh"; sourceTree = "<group>"; };
-		08D9C4B91C99A5B04EAD9142565201F9 /* Pods-VKiOSViews_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VKiOSViews_Tests.modulemap"; sourceTree = "<group>"; };
+		08D9C4B91C99A5B04EAD9142565201F9 /* Pods-VKiOSViews_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VKiOSViews_Tests.modulemap"; sourceTree = "<group>"; };
 		11CB4FF14AB14FA4992F6D8233A7DEB4 /* Pods-VKiOSViews_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VKiOSViews_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		15E05A3AD42A6AC3DC4AD43D79D60624 /* Pods-VKiOSViews_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VKiOSViews_Example-umbrella.h"; sourceTree = "<group>"; };
 		19D066940CF9A3D1479A34F6A5A07020 /* Pods-VKiOSViews_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VKiOSViews_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		235717DE82F923FCA3F2D499EE743729 /* VKiOSViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VKiOSViews.framework; path = VKiOSViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235717DE82F923FCA3F2D499EE743729 /* VKiOSViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VKiOSViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B050549DA91FE31ABDCD25D0603ABF /* VKiOSViews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VKiOSViews-dummy.m"; sourceTree = "<group>"; };
-		3793C6A8D98883A9BC31C52D2221AA93 /* Pods-VKiOSViews_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VKiOSViews_Example.modulemap"; sourceTree = "<group>"; };
+		3793C6A8D98883A9BC31C52D2221AA93 /* Pods-VKiOSViews_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VKiOSViews_Example.modulemap"; sourceTree = "<group>"; };
 		385E05E43ED8647B23E844875657D7E4 /* VKiOSViews.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VKiOSViews.xcconfig; sourceTree = "<group>"; };
+		3A34293C1F5B241E00CE0396 /* UIButton+RoundedCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+RoundedCorners.swift"; sourceTree = "<group>"; };
+		3A34293D1F5B241E00CE0396 /* UIImageView+Circular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Circular.swift"; sourceTree = "<group>"; };
+		3A34293E1F5B241E00CE0396 /* UIViews+Rounded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViews+Rounded.swift"; sourceTree = "<group>"; };
 		4AA79AD580E9D646887463258C24F6DE /* Pods-VKiOSViews_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VKiOSViews_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4D57EB9581263893712A8597D3DCFEBB /* Pods_VKiOSViews_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VKiOSViews_Example.framework; path = "Pods-VKiOSViews_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D57EB9581263893712A8597D3DCFEBB /* Pods_VKiOSViews_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKiOSViews_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4E4E7BE28685E69C76120A407ACC67 /* Pods-VKiOSViews_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VKiOSViews_Example-resources.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		92DB11097F344069E35F7388C0124D59 /* Pods-VKiOSViews_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VKiOSViews_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A26EC8635E5C34F2A8B866C546D97790 /* Pods-VKiOSViews_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VKiOSViews_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A39D90A20D4EF6E1F4FF5FE637A3EC99 /* Pods-VKiOSViews_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VKiOSViews_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A64222A0B969D76AFEDC8D8E990C089A /* Pods-VKiOSViews_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VKiOSViews_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -53,11 +58,10 @@
 		BE8C1FBACFF257364C22596F469AC586 /* Pods-VKiOSViews_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VKiOSViews_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C47FB8173B6683BE5586376F1052C15E /* VKiOSViews-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VKiOSViews-prefix.pch"; sourceTree = "<group>"; };
 		C484C14F07E62EA20EFCA9D6A9688B04 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7E67D8FBC3C7CA701A8D4D9EC163DF3 /* Pods_VKiOSViews_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VKiOSViews_Tests.framework; path = "Pods-VKiOSViews_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E67D8FBC3C7CA701A8D4D9EC163DF3 /* Pods_VKiOSViews_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKiOSViews_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8ACEFC72F965C7DD23642C617000DCD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC89ACF15F1541CA6DFF10C9A50EE97 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE9099A35FE7935F734A8FB84E20710E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = VKiOSViews/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		E290D00D6C0267BFBAB9191B0BD74872 /* VKiOSViews.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = VKiOSViews.modulemap; sourceTree = "<group>"; };
+		E290D00D6C0267BFBAB9191B0BD74872 /* VKiOSViews.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = VKiOSViews.modulemap; sourceTree = "<group>"; };
 		E2EE935F4544C277B59FD3EFF31D95AA /* Pods-VKiOSViews_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VKiOSViews_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F969582D02878287E97541466C2CD3FE /* Pods-VKiOSViews_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VKiOSViews_Example-dummy.m"; sourceTree = "<group>"; };
 		FAA33E8708C83B4A94DFF69D7340761D /* Pods-VKiOSViews_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VKiOSViews_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -109,7 +113,9 @@
 		1CE36893AA8CE42E2D4AB05DCCE89665 /* VKiOSViews */ = {
 			isa = PBXGroup;
 			children = (
-				DE9099A35FE7935F734A8FB84E20710E /* ReplaceMe.swift */,
+				3A34293C1F5B241E00CE0396 /* UIButton+RoundedCorners.swift */,
+				3A34293D1F5B241E00CE0396 /* UIImageView+Circular.swift */,
+				3A34293E1F5B241E00CE0396 /* UIViews+Rounded.swift */,
 				1536F5E8390E52472AD025D2767397EB /* Support Files */,
 			);
 			name = VKiOSViews;
@@ -296,6 +302,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					419D650800E81E4CAD091A455A7EBE5E = {
+						LastSwiftMigration = 0820;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -321,7 +332,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3429411F5B241E00CE0396 /* UIViews+Rounded.swift in Sources */,
+				3A34293F1F5B241E00CE0396 /* UIButton+RoundedCorners.swift in Sources */,
 				CABF19DC8DBAD3140E21317909EF95D9 /* Pods-VKiOSViews_Example-dummy.m in Sources */,
+				3A3429401F5B241E00CE0396 /* UIImageView+Circular.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93BADD8313EBC979A0D442FCCB19D8EB /* ReplaceMe.swift in Sources */,
 				85A38219A7D242E3D497B0EF20630E04 /* VKiOSViews-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BDB0A2BEBEB85AEA282930269E93485A /* Pods-VKiOSViews_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -476,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2EE935F4544C277B59FD3EFF31D95AA /* Pods-VKiOSViews_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
