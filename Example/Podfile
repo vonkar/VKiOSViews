@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'VKiOSViews_Example' do
+  pod 'VKiOSViews', :path => '../'
+
+  target 'VKiOSViews_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
