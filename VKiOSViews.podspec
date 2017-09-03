@@ -22,7 +22,7 @@ VKiOSViews used to create custom views using extensions feature in swift.
 DESC
 
   s.homepage         = 'https://github.com/vonkar/VKiOSViews'
-  s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  #s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'vonkar' => 'vinod.onkar@gmail.com' }
   s.source           = { :git => 'https://github.com/vonkar/VKiOSViews.git', :tag => s.version.to_s }
