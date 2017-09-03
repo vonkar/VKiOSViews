@@ -9,6 +9,20 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+To use it, call methods directly on instances of UIImage class, UIButton class and UIView class and see 
+the effects like cicular crop for images, rounded corner effect for buttons etc.
+
+See the below example,
+
+uiButton.getRoundedCornerButtonView(radius: 3.0)
+
+It will create round corner button with radius 3.0 whichs is customizable.
+
+uiimageview.getFulCircularImageView()
+
+Above code will create full circular UIImageView.
+
+
 ## Requirements
 
 ## Installation
