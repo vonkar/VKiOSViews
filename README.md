@@ -14,14 +14,20 @@ the effects like cicular crop for images, rounded corner effect for buttons etc.
 
 See the below example,
 
-uiButton.getRoundedCornerButtonView(radius: 3.0)
+## How To Use
 
+```swift
+Swift:
+
+uiButton.getRoundedCornerButtonView(radius: 3.0)
+```
 It will create round corner button with radius 3.0 whichs is customizable.
 
+```swift
+Swift:
 uiimageview.getFulCircularImageView()
-
+```
 Above code will create full circular UIImageView.
-
 
 ## Requirements
 
