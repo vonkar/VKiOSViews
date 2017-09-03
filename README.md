@@ -12,7 +12,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 To use it, call methods directly on instances of UIImage class, UIButton class and UIView class and see 
 the effects like cicular crop for images, rounded corner effect for buttons etc.
 
+<p align="center" >
+    <img src="/screenshot_circular_img.png" title="">
+</p>
 
+<p align="center" >
+    <img src="/screenshot_rounded_btn.png" title="">
+</p>
 
 ## How To Use
 
