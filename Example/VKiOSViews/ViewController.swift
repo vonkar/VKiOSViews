@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import VKiOSViews
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet weak var uiView: UIView!
